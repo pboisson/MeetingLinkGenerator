@@ -1,13 +1,15 @@
-# web-nodejs-sample
+# meeting-link-generator
 
-ExpressJS Sample Application
+Simple application to generate links for conference
 
 # Developer Workspace
-[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=r8et9w6vohmqvro8)
+https://github.com/pboisson/MeetingLinkGenerator
 
-# Stack to use
-
-FROM [codenvy/node](https://hub.docker.com/r/codenvy/node/)
+# How to use
+3 parameters in URL :
+- Number : Phone Number (default : '+33-23720-2464')
+- Conf : Conference Number (e.g. 99 999 999)
+- Code : Password (e.g. 1234)
 
 # How to run
 
