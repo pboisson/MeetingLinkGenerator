@@ -4,8 +4,18 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  var name = req.get('name');
-  res.send('Hello World!' + ' ' + name);
+	var number = req.query.number;
+	var conf = req.query.conf;
+	var code = req.query.code;
+	var link = 'Tel://';
+	if(number == null) {
+		number = '+33-23720-2464';
+	}
+	link += number + ',,' + conf + '#';
+	if(code != null) {
+		link += ',,' + code + '#';
+	}
+  res.send(link);
 });
 
 app.listen(3000, function () {
