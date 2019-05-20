@@ -13,11 +13,11 @@ app.get('/', function (req, res) {
 	}
 	link += number + ',,' + conf + '#';
 	if(code != null) {
-		link += ',,' + code + '#';
+		link += ',,,,,,' + code + '#';
 	}
   res.send(link);
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(80, function () {
+  console.log('Example app listening on port 80!');
 });
